@@ -15,7 +15,7 @@ class MeltanoJobsStream(meltanoStream):
     replication_key = "started_at"
 
     def query(self):
-        return "select * from job order by id ASC"
+        return "select * from runs order by id ASC"
 
     schema = th.PropertiesList(
         th.Property("id", th.StringType),

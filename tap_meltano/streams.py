@@ -28,5 +28,5 @@ class MeltanoJobsStream(meltanoStream):
         th.Property("run_id", th.StringType),
         th.Property("trigger", th.StringType),
         th.Property("last_heartbeat_at", th.DateTimeType),
-        th.Property("state_id", th.StringType),
+        th.Property("job_name", th.StringType),
     ).to_dict()
